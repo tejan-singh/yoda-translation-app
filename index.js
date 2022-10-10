@@ -18,6 +18,9 @@ const translate = () => {
       console.log(data);
       //output
       outputTextBox.value = data.contents.translated;
+    })
+    .catch((error) => {
+      outputTextBox.value = error;
     });
 };
 
